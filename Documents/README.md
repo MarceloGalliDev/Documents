@@ -13,8 +13,7 @@
     - https://pt-br.reactjs.org/community/ui-components.html
 
     > Material UI
-    - https://mui.com/pt/
-    - Material UI - npm i @mui/material@5.10.2 @emotion/react@11.10.0 @emotion/styled@11.10.0
+    > Chakra UI
 
 
 > ReactJS
@@ -25,14 +24,7 @@
         - Aside
     
 > Styled-Components
-    - Posso concatenar JS dentro dos parametros de CSS
-        - Exemplo:
-            var primaryColor = '#F52273';
-            export const Valor = styled('p')`
-                    margin: 0;
-                    font-weight: bold;
-                    color: ${() => primaryColor};
-            `;
+
 
 > Theme
     - Crio um theme central e aplico a toda aplicação, onde posso resgatar utilizando props
