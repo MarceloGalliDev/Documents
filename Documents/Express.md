@@ -1,4 +1,5 @@
 >Back-End - Express
 
-- Usado para requisições
+- npm install express
+- Usado para requisições em NodeJs
 - Processamento de requisições e devolver respostas
