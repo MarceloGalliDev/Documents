@@ -1,7 +1,7 @@
 # Documents
  Study documents
 
->> FRONT-END
+>>> FRONT-END
 > Habilitar a execução de scripts no Windows
     - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
     
@@ -22,9 +22,9 @@
         - Header
         - Footer
         - Aside
-    
+>>CSS
 > Styled-Components
-
+> SCSS - SaaS
 
 > Theme
     - Crio um theme central e aplico a toda aplicação, onde posso resgatar utilizando props
@@ -91,10 +91,6 @@
         - CORS
             - Bloqueio de segurança feito pelo navegador, para requisições de servidores diferentes.
 
-        
-> Imsonia 
-    - Para realizar teste de API
-
 > Virtual .env
     - No windows tem que habilitar a execução de scripts no powershell
         - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -105,3 +101,7 @@
         - windows
             - python -m venv .venv
             - .\.venv\Scripts\activate
+
+>> Testes
+> Imsonia 
+
