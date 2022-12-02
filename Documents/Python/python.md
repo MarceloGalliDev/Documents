@@ -68,3 +68,23 @@
         - é uma representação do mundo real
         - objeto é a projeção dessa classe 
             - eu tenho um bixo que chama Fred que é da classe gato, seu atributo é pelos claros e olhos azuis, e seus métodos são miar e comer
+        
+        - Visibilidade e Encapsulamento
+            - Visibilidade
+                - todo atributo privado antes do seu nome deverá ter dois underline (__qtde_bola),
+                    so podde ser acessado ou modificado dentro da própria classe
+
+                - todo atributo protected antes do seu nome deverá ter um underline (_qtde_bola),
+                    podem ser chamado, acessado e modificado dentro da própria classe e também dentro das classe que herdam a classe onde o atributo foi declarado, pórem não pode ser acessado via objeto                
+
+            - Encapsulamento(setters e propertys)
+                - adicionamos o @ para indicar a property
+                - adicionamos o @setters para indicar-mos os setter
+
+        - Interface
+            - Similar ao typeScript
+        
+        - Composição
+            - Criar objetos dentro de outros objetos
+            - Criar uma instancia no qual é dependente de outra instância dono
+            
