@@ -27,3 +27,10 @@
         - INSERT INTO usuario (id, nome, idade) VALUES (1, 'Maria', 50)
         - UPDATE usuario SET nome = 'Maria' WHERE id = 1
         - DELETE FROM usuario WHERE id = 1
+
+5. Incluindo no SQL
+    - File > Export
+        - copia do texto dos comando para criação da banco de dados e colo no arquivo root do servidor local
+    
+    - Database > Forward Engineer
+        - cria-se diretamente no root do servidor o banco de dados
