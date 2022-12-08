@@ -15,7 +15,7 @@
     - views.py = todo código da camada de view, regra do negócio
     - migrations = é a atualização do app
 
-    - comunicação das rotas (MTV)
+    - comunicação das rotas (MTV = model, template, view)
         > cliente faz a requisição GET para /
         > URL Dispatcher envia para o VIEW
         > VIEW faz a busca nos Models que retorna com a regra do negócio
