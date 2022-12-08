@@ -3,7 +3,11 @@
     - Para python, framework voltada para desenvolvimento web, ajuda a resolver problemas com desenvolvimento web
     - criando o projeto
         - pip install django
-        - django-admin startproject myteacher .
+        - django-admin startproject {name}
+    
+    - criando aplicação dentro do projeto
+        - python manage.py startapp {name}
+
         - python manage.py runserver  
     - asgi = é para aplicação assíncrona
     - wsgi = é para aplicação síncrona
@@ -15,7 +19,7 @@
     - views.py = todo código da camada de view, regra do negócio
     - migrations = é a atualização do app
 
-    - comunicação das rotas (MTV = model, template, view)
+    - comunicação das rotas (MTV = model, template, viewdjango)
         > cliente faz a requisição GET para /
         > URL Dispatcher envia para o VIEW
         > VIEW faz a busca nos Models que retorna com a regra do negócio
