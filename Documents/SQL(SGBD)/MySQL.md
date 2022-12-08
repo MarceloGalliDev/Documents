@@ -42,9 +42,28 @@
     
     - DML
         - INSERT INTO usuario (id, nome, idade) VALUES (1, 'Maria', 50)
-        - UPDATE usuario SET nome = 'Maria' WHERE id = 1
+        - UPDATE usuario SET nome = 'Maria' WHERE id = 1 (todo comando UPDATE, é necessário usar o WHERE para não correr risco de alterar toda a coluna de uma table)
         - DELETE FROM usuario WHERE id = 1
 
+    - DQL
+        - Usado para consultas
+        - SELECT * FROM usuario
+        - usando filtros
+        - SELECT nome, telefone FROM cliente WHERE cpf = "12345678911";
+
     - Exemplos de comandos
+
         ALTER TABLE produto
         DROP COLUMN descricao;
+
+        UPDATE cliente
+        SET nome = "Maria" WHERE idcliente = 1;
+
+        UPDATE produto
+        SET valor = 800, nome="Monitor ultrawide"
+        WHERE idproduto = 1 OR idproduto = 2;
+
+        DELETE FROM produto_has_pedido
+        WHERE produto_idproduto = 2;
+
+        SELECT cpf, nome FROM cliente; (retorna na ordem escrita)
