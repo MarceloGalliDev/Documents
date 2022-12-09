@@ -6,9 +6,12 @@
         - django-admin startproject {name}
     
     - criando aplicação dentro do projeto
+        - cd {projeto}
         - python manage.py startapp {name}
 
-        - python manage.py runserver  
+    - startando o server
+        - python manage.py runserver 
+
     - asgi = é para aplicação assíncrona
     - wsgi = é para aplicação síncrona
     - __init__ = todo arquivo python que começa com __ são chamados de arquivos dander, é para indicar que a pasta tem arquivos importáveis
