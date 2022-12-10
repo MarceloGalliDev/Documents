@@ -34,7 +34,10 @@
         > API onde encontra-se o Backend retor com um STATUS CODE, 200 que é Ok se ocorrer corretamente
 
     - Migration
+        - criamos uma migration para incluir no banco de dados uma determinada table
         - é a forma de versionar o banco de dados
+        - como o model no DJANGO vai virar uma table no banco
+        - necessário incluir dentro do arquivo settings.py no scopo do INSTALLED_APPS o nome da aplicação
             - python manage.py makemigrations = cria o migration
             - python manage.py migrate = inclui no banco de dados
     
@@ -48,3 +51,13 @@
     
     - CORS
         - Bloqueio de segurança feito pelo navegador, para requisições de servidores diferentes.
+
+    
+    - Incluindo URLS no Django
+        1. Importamos a classe de formulário do Django
+        2. Criamos o template, arquivo HTML
+        3. Criamos o arquivo a função de render() dentro da views
+        4. Criamos o arquivo urls.py no escopo da pasta da aplicação
+        5. Que por sua vez vem redirecionada da urls.py do escopo do projeto
+        6. Assim renderizando na página web nosso contexto
+         
