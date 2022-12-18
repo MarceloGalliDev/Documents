@@ -39,8 +39,16 @@
     - git push -u origin main = enviando os arquivos
     - git pull origin main = pegando arquivos alterados no repositório
 
->Criando Branch
-    - 
+>Utilizando Branch
+    - git branch "nome" = criando a branch
+    - git switch "nome" = iniciando dentro da branch
+    - git push -u origin "branch" = fazendo push na branch especifica
+    - git pull origin "branch" = fazendo pull da branch
+    - merge é feito pela página do GitHub
+        - análise do merge pelo pull request entre duas branch
+        - análise dos conflitos
+        
+
 
 >Comandos GIT
     - git --version = para ver a versão do GIT instalada
