@@ -59,7 +59,40 @@
     - arquivos de configurações
     - arquivos da pasta node_modules
 
->Comandos GIT
+>Criar atalhos personalizados
+    - usamos alias para gerar um atalho, usamos extensão .dog
+        - git config alias.dog "log --all --decorate --oneline --graph"
+        - git config --global alias.dog "log --all --decorate --oneline --graph"
+    - para remover um alias.dog
+        - git config --unset alias.dog
+        - git config --global --unset alias.dog
+    - listando atalhos personalizados
+        - git config -l | grep âlias\. | cut -c 7- | sort
+        - atalho personalizado da listagem
+            - git config alias.alias "! git config -l | grep âlias\. | cut -c 7- | sort"
+
+>Stash
+    - usamos stash para salvar alterações realizada sem fazer commits
+        - git stash
+    - para colocar nome no stash
+        - git stash push -m "nome do stash"
+    - listando stash
+        - git stash list
+    - recuperando modificações mais recentes
+        - git stash apply
+    - recuperando modificações por id
+        - git stash apply stash@{numero do stash}
+    - removendo stash
+        - git stash drop stash@{numero do stash}
+
+>Cherry Pick
+    - para juntarmos um branch para um merge, mas somente de uma parte do código, separados por commits, usamos o cherry pick
+        - git cherry-pick "id do commit"
+
+
+
+>>Comandos GIT
+>comandos locais
     - git --version = para ver a versão do GIT instalada
     - git init = para criar um repositório
     - git status = para verificar o status do nosso repositório, branch, commits e etc
@@ -69,6 +102,41 @@
     - git config --global user.email "email" = logando email user
     - git commit -m "mensagem" = para comitar e fazer a inserção do arquivo ao GIT
     - git log = todas execuções realizada no GIT
+    - git log -p "arquivos" = para ver log apenas de um grupo de arquivos
+    - git log -p --autor=nome-autor = para ver log de um autor
+    - git log --after="MMM DD YYYY" ou --before="MMM DD YYYY" = para ver log entre datas
     - git clone "url" = para clonar um repositório
+    - rm -rf .git = para apagar um repositório, tem que ser executado dentro do diretório
+    - git checkout = para verificar arquivos não monitorados
+    - git clean -df = apaga novos arquivos que não subiram de Stages
+    - git reset = para desfazer um git add
+    - git commit --amend = para reescrever um commit
+    - git branch = lista todos os branch em um repositório
+    - git branch -a = lista todos os branch em um repositório remoto
+    - git checkout "nome da branch" = para mudar a brench
+    - git checkout -b "nome da branch" = cria uma nova brench
+    - git branch -d "nome da branch" = apaga a brench
+    - git branch -m "renomeando brench" = para renomear uma branch
+    - git branch -m "nome atual" "novo nome" = para renomear uma branch estando em outra branch
+    - git checkout --orphan "nome da branch" = para criar uma brench orfã
+    - git log --all --decorate --oneline --graph = para exibir historicos de branch
+
+>comandos remotos
+    - sempre usaremos git remote para comandos remotos
+    - git clone "url" "pasta desejada"
+    - git remote add origin "url"
+        - origin = nome do nosso repositório remoto, como um atalho, para evitar escrita da url
+    - git remote -v = para ver o endereço do repositório que estamos enviando os códigos
+    - git remote rm origin = remove a conexão entre repositório local e remoto
+    - git remote rename "nome atual" "novo nome" = para renomear um repositório
+    - git branch -a = listar branch do repositório remoto
+    - git push -u origin "nome branch" = criando branch no repositório remoto
+    - git push origin -d "nome branch" = para apagar uma branch
+    - git branch -m "nome branch"  "novo nome" = renomeando uma branch
+        - git push origin :"nome atual" "novo nome" = necessário para sobre-escrever a branch no repositório remoto
+        - git push origin -u "novo nome da branch" = para ter conexão da nova branch
+    - git blame "nome do arquivo" = para ver o usuário que alterou determinada linha do arquivo
+    - git blame -w -L 1,12 "nome do arquivo" = para simplicar a análise (se adicionar o -e, será exibido o email)
+
 
 
