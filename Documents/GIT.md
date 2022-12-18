@@ -47,8 +47,17 @@
     - merge é feito pela página do GitHub
         - análise do merge pelo pull request entre duas branch
         - análise dos conflitos
-        
 
+>Clonando repositório
+    - copy link da página
+    - git clone "url"
+    - para permitir que um outro usuário faça commits no repositório, é necessário autorização dentro do settings>manage access do Github
+
+>.gitignore
+    - para não commitar arquivos que não deveram subir ao repositório
+    - arquivos de ambientes
+    - arquivos de configurações
+    - arquivos da pasta node_modules
 
 >Comandos GIT
     - git --version = para ver a versão do GIT instalada
@@ -60,5 +69,6 @@
     - git config --global user.email "email" = logando email user
     - git commit -m "mensagem" = para comitar e fazer a inserção do arquivo ao GIT
     - git log = todas execuções realizada no GIT
+    - git clone "url" = para clonar um repositório
 
 

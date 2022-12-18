@@ -1,5 +1,16 @@
 # Documents
- Study documents
+- readme.md, para que serve?
+    - tutorial para um usuário pode contribuir para o projeto
+    - generico
+    - descrição do projeto
+    - como executar esse projeto
+    - https://dev.to/reginadiana/como-escrever-um-readme-md-sensacional-no-github-4509
+
+>Tags readme
+    - # = tags para caixa alta, como um h1, h2, h3, pode ter até ### 
+    - ``= arquivos de url dentro de apostrofe, para ficar identado
+    - > = para colocar em Italico
+
 
 >>> FRONT-END
 > Habilitar a execução de scripts no Windows
