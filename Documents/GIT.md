@@ -22,6 +22,26 @@
     - git commit -m "mensagem"
     - git revert "id do commit"
 
+>Criando SSH e salvando no GitHub
+    - ssh-keygen -t rsa -b 4096 -C "email"
+        - próximo passo é o caminho do .ssh-keygen
+        - frase sercreta
+    - login no site do github
+        - github.com/settings/keys
+        - copiando e colando o SSH
+            - pbcopy < ~/.ssh/id_rsa.pub
+    - teste de conexão
+        - ssh -T git@github.com
+            - frase secreta
+
+>Subindo projeto para GitHub
+    - git remote add origin "link do repositório"
+    - git push -u origin main = enviando os arquivos
+    - git pull origin main = pegando arquivos alterados no repositório
+
+>Criando Branch
+    - 
+
 >Comandos GIT
     - git --version = para ver a versão do GIT instalada
     - git init = para criar um repositório
@@ -32,3 +52,5 @@
     - git config --global user.email "email" = logando email user
     - git commit -m "mensagem" = para comitar e fazer a inserção do arquivo ao GIT
     - git log = todas execuções realizada no GIT
+
+
