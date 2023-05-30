@@ -2,7 +2,7 @@
 
 ## Windows
 > No windows tem que habilitar a execução de scripts no powershell
-  * Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+  - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
   - python -m venv .venv
   - .venv\Scripts\activate
 
