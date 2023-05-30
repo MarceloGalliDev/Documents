@@ -1,4 +1,4 @@
-#Virtual Terminal
+# Virtual Terminal
 
 ## Windows
 > No windows tem que habilitar a execução de scripts no powershell

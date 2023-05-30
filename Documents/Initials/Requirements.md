@@ -1,3 +1,3 @@
-## Requirements
-> pip freeze > requirements.txt
-> pip install -r requirements.txt
+# Requirements
+- pip freeze > requirements.txt
+- pip install -r requirements.txt
