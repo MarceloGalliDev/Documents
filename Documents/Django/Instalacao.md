@@ -28,3 +28,9 @@
   - para gerenciar o path
 > pip install cryptography
   - para adicionar a criptografia
+
+# 3. Passo
+> Incluir nas variáveis de ambiente do windows o mysql
+  - painel de controle > sistema > configurações avançadas do windows > variáveis de ambiente
+    - localizar a pasta bin dentro do mysql
+    - e no path do windows incluir %{NOME_VARIAVEL}%
