@@ -88,3 +88,36 @@
             - Criar objetos dentro de outros objetos
             - Criar uma instancia no qual é dependente de outra instância dono
             
+# Comandos
+## comando para debugar a aplicação
+- pdb.set_trace()
+    - essa função aceita dois parametros C e Q
+        C = avança o código
+        Q = encerra a execução
+
+## comando para tratamento de erros
+- try, except e finally
+    - try = quando temos um possível erro, usamos o try e o except
+    - except = usamos para atribuir o erro a uma váriavel
+        - exemplo:
+        except Exception as e:
+            print('Error: {}'.format(e))
+    - finally = ele executa a função independente do erro ou não
+
+## logging
+- niveis de logging
+    - 10, 20, 30, 40, 50
+    - debug, info, warning, error, critical
+
+import logging
+
+LOG_FORMAT = '%(levelname)s %(message)s - %(asctime)s'
+
+#criamos aqui o arquivo log
+logging.basicConfig(filename='app.log, level=logging.DEBUG)
+
+log = logging.getLogger()
+
+log.info('cabeçalho)
+log.level
+
