@@ -28,3 +28,6 @@
     > instalar fonts
     - cd fonts
     - ./install.hs
+
+5. Colocando Path do macOS
+> inserir o path do python no final do arquivo nano ~./zshrc
