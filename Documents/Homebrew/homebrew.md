@@ -20,5 +20,11 @@
     > clonar e adicionar no plugin ~/.zshrc
     - https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
     - https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+    - https://github.com/powerline/fonts
+    
     > adicionar no ZSH_THEME
     - https://github.com/spaceship-prompt/spaceship-prompt
+
+    > instalar fonts
+    - cd fonts
+    - ./install.hs
