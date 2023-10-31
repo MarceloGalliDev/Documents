@@ -13,7 +13,7 @@
 
   - asgi = é para aplicação assíncrona
   - wsgi = é para aplicação síncrona
-  - __init__ = todo arquivo python que começa com __ são chamados de arquivos dander, é para indicar que a pasta tem arquivos importáveis
+  - __init__ = todo arquivo python que começa com __ são chamados de arquivos de modulos, é para indicar que a pasta tem arquivos importáveis
   - admin.py = para controle de admin do django
   - apps.py = arquivo de configuração do app
   - models.py =  arquivo onde vai os modelos da aplicação, representa as tabelas no banco de dados
@@ -58,4 +58,7 @@
     4. Criamos o arquivo urls.py no escopo da pasta da aplicação
     5. Que por sua vez vem redirecionada da urls.py do escopo do projeto
     6. Assim renderizando na página web nosso contexto
+
+> Comandos Shell Django
+> dir(váriavel) = para ver os campos disponíveis sendo meta e normais
         
